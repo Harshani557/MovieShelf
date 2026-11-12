@@ -5,6 +5,8 @@ const movies = [
     year: 2019,
     genre: "Action",
     rating: 8.1,
+    mood: ["Excited", "Thrilled"],
+    duration: 124, // minutes
     director: "Marcus Hale",
     cast: ["Daniel Reyes", "Sofia Marlowe", "Kenji Ito"],
     description: "A retired special-forces pilot is pulled back into service when a stolen stealth jet threatens to start a war. He has 48 hours to track it across three continents.",
@@ -16,6 +18,8 @@ const movies = [
     year: 2018,
     genre: "Comedy",
     rating: 7.0,
+    mood: ["Happy"],
+    duration: 88, // minutes
     director: "Greg Wallis",
     cast: ["Tina Brooks", "Sam Okafor", "Helen Ward"],
     description: "When the boss goes on holiday, three clumsy interns accidentally take over the company. Chaos, fake meetings and one runaway printer follow.",
@@ -27,6 +31,8 @@ const movies = [
     year: 2016,
     genre: "Drama",
     rating: 8.2,
+    mood: ["Relaxed"],
+    duration: 112, // minutes
     director: "Isabel Moreau",
     cast: ["Anna Keller", "Paul Weston", "Maria Duarte"],
     description: "A widow finds a box of old letters and slowly uncovers the story of her late husband's first love. Memory and forgiveness bring a family back together.",
@@ -38,6 +44,8 @@ const movies = [
     year: 2018,
     genre: "Horror",
     rating: 7.2,
+    mood: ["Thrilled"],
+    duration: 96, // minutes
     director: "Dorian Black",
     cast: ["Emily Frost", "Jacob Lane", "Mina Das"],
     description: "Four friends rent a cabin in a quiet valley and begin to hear voices in the walls. By the third night they cannot find the way out.",
@@ -49,6 +57,8 @@ const movies = [
     year: 2015,
     genre: "Romance",
     rating: 7.1,
+    mood: ["Happy", "Relaxed"],
+    duration: 104, // minutes
     director: "Julia Marsh",
     cast: ["Emma Blake", "Noel Ashton", "Kira Santos"],
     description: "Two strangers keep leaving notes for each other in a second-hand bookshop. They fall in love before they ever meet.",
@@ -60,6 +70,8 @@ const movies = [
     year: 2020,
     genre: "Sci-Fi",
     rating: 8.0,
+    mood: ["Excited", "Thrilled"],
+    duration: 118, // minutes
     director: "Hannah Zeller",
     cast: ["Alex Mercer", "Yuki Tanaka", "Dr. Ivan Roth"],
     description: "An astronaut is stranded on a failing space station with a damaged AI. Together they must find a way home before the oxygen runs out.",
@@ -71,6 +83,8 @@ const movies = [
     year: 2019,
     genre: "Animation",
     rating: 7.7,
+    mood: ["Happy", "Excited"],
+    duration: 86, // minutes
     director: "Nora Ellis",
     cast: ["Voice: Tara Bell", "Voice: Jimmy Fox", "Voice: Ana Costa"],
     description: "A group of tiny video-game characters escapes from an old arcade machine. They have one night to find their way back before the lights come on.",
@@ -82,6 +96,8 @@ const movies = [
     year: 2014,
     genre: "Thriller",
     rating: 7.4,
+    mood: ["Thrilled"],
+    duration: 108, // minutes
     director: "Adrian Cole",
     cast: ["Nora Blake", "Jason Pryce", "Elif Demir"],
     description: "A night nurse sees something she should not have seen at the hospital. Now someone is following her home.",
@@ -93,6 +109,8 @@ const movies = [
     year: 2022,
     genre: "Action",
     rating: 7.4,
+    mood: ["Excited"],
+    duration: 102, // minutes
     director: "Elena Voss",
     cast: ["Jack Turner", "Amara Okoye", "Liam Brandt"],
     description: "A city detective chases a master thief through rooftops, subways and neon-lit markets. Every clue leads closer to someone inside the police force.",
@@ -104,6 +122,8 @@ const movies = [
     year: 2021,
     genre: "Comedy",
     rating: 7.3,
+    mood: ["Happy", "Relaxed"],
+    duration: 94, // minutes
     director: "Laura Finch",
     cast: ["Bob Henley", "Zoe Carter", "Dev Patel Jr."],
     description: "A talkative uncle drives his two reluctant nephews across the country in a broken camper van. Nothing goes to plan, and that is the fun of it.",
@@ -115,6 +135,8 @@ const movies = [
     year: 2020,
     genre: "Drama",
     rating: 7.9,
+    mood: ["Relaxed"],
+    duration: 105, // minutes
     director: "Samuel Reid",
     cast: ["Harold Price", "Clara Jensen", "Noah Fields"],
     description: "A farmer struggles to save his family orchard while his estranged son returns home. Two generations learn to talk after years of silence.",
@@ -126,6 +148,8 @@ const movies = [
     year: 2021,
     genre: "Horror",
     rating: 6.8,
+    mood: ["Thrilled"],
+    duration: 89, // minutes
     director: "Rhea Collins",
     cast: ["Sarah Mills", "Ethan Cruz", "Lydia Knox"],
     description: "A family moves into an old house with a sealed door under the stairs. What lives behind it has been waiting a long time.",
@@ -137,6 +161,8 @@ const movies = [
     year: 2019,
     genre: "Romance",
     rating: 7.8,
+    mood: ["Relaxed", "Happy"],
+    duration: 115, // minutes
     director: "Arjun Mehra",
     cast: ["Neha Kapoor", "Rohan Verma", "Lata Desai"],
     description: "A young architect and a travelling photographer meet during one rainy season in Colombo. They have only a few weeks before he must leave.",
@@ -148,6 +174,8 @@ const movies = [
     year: 2023,
     genre: "Sci-Fi",
     rating: 7.6,
+    mood: ["Excited"],
+    duration: 110, // minutes
     director: "Kai Nakamura",
     cast: ["Zara Lin", "Marco Vidal", "Eve Holloway"],
     description: "In a city run by data, a hacker discovers that people's memories are being sold. She decides to take them back.",
@@ -159,6 +187,8 @@ const movies = [
     year: 2021,
     genre: "Animation",
     rating: 8.3,
+    mood: ["Happy", "Excited"],
+    duration: 98, // minutes
     director: "Wei Zhang",
     cast: ["Voice: Lily Chen", "Voice: Henry Wu", "Voice: Mei Ling"],
     description: "A shy village girl discovers a lantern that wakes a friendly dragon. Together they save the festival from a mountain storm.",
@@ -170,6 +200,8 @@ const movies = [
     year: 2018,
     genre: "Thriller",
     rating: 7.1,
+    mood: ["Thrilled", "Excited"],
+    duration: 107, // minutes
     director: "Martin Shaw",
     cast: ["Victor Hale Jr.", "Selene Ortiz", "Brian Cho"],
     description: "Two partners plan the perfect bank job, but each has a secret deal with the other side. Only one of them can walk away.",
@@ -181,6 +213,8 @@ const movies = [
     year: 2015,
     genre: "Action",
     rating: 6.9,
+    mood: ["Excited"],
+    duration: 126, // minutes
     director: "Victor Kane",
     cast: ["Ryan Cole", "Maya Lin", "Omar Haddad"],
     description: "A small squad defends an isolated research base against a well-armed private army. Help is hours away and the base will not hold that long.",
@@ -192,6 +226,8 @@ const movies = [
     year: 2014,
     genre: "Comedy",
     rating: 6.6,
+    mood: ["Happy"],
+    duration: 92, // minutes
     director: "Mike Orsini",
     cast: ["Frank Dillon", "Rosa Mendes", "Eli Grant"],
     description: "A grumpy landlord wins the lottery and decides to keep it secret from his noisy tenants. His disguises get more ridiculous each day.",
@@ -203,6 +239,8 @@ const movies = [
     year: 2012,
     genre: "Drama",
     rating: 7.5,
+    mood: ["Relaxed"],
+    duration: 121, // minutes
     director: "Daniel Roux",
     cast: ["Leo Marchetti", "Ayesha Khan", "Tom Birch"],
     description: "A gifted young violinist loses her confidence after an accident. A stubborn old teacher helps her find her own voice again.",
@@ -214,6 +252,8 @@ const movies = [
     year: 2013,
     genre: "Horror",
     rating: 6.5,
+    mood: ["Thrilled"],
+    duration: 85, // minutes
     director: "Victor Hale",
     cast: ["Oliver Grey", "Tessa Quinn", "Ravi Menon"],
     description: "A village legend about a ghostly lantern turns real when a group of students goes camping. The light only appears after midnight.",
@@ -225,6 +265,8 @@ const movies = [
     year: 2022,
     genre: "Romance",
     rating: 7.0,
+    mood: ["Relaxed", "Happy"],
+    duration: 99, // minutes
     director: "Chloe Bernard",
     cast: ["Lucas Moreau", "Hannah Voigt", "Pia Rossi"],
     description: "A night-shift barista and a sleepless writer share a quiet corner of a city cafe. Their late-night talks become the best part of both lives.",
@@ -236,6 +278,8 @@ const movies = [
     year: 2017,
     genre: "Sci-Fi",
     rating: 7.3,
+    mood: ["Excited", "Thrilled"],
+    duration: 129, // minutes
     director: "Rafael Duarte",
     cast: ["Mia Torres", "Ben Archer", "Sana Qureshi"],
     description: "Earth is gone and the last colony ship drifts toward an unknown planet. Food is running low and the crew starts to disagree.",
@@ -247,6 +291,8 @@ const movies = [
     year: 2016,
     genre: "Animation",
     rating: 7.2,
+    mood: ["Happy", "Relaxed"],
+    duration: 82, // minutes
     director: "Oliver Tate",
     cast: ["Voice: Rick Dunn", "Voice: Sue Park", "Voice: Max Hill"],
     description: "A brave ship's cat dreams of becoming a real captain. He leads a crew of seagulls and crabs on a treasure hunt.",
@@ -258,6 +304,8 @@ const movies = [
     year: 2022,
     genre: "Thriller",
     rating: 7.9,
+    mood: ["Thrilled"],
+    duration: 114, // minutes
     director: "Ayesha Siddiqui",
     cast: ["Omar Sheikh", "Julia Park", "Carl Meyer"],
     description: "A junior accountant finds a hidden set of books that points to a powerful businessman. Soon her own name is in the file.",
@@ -269,6 +317,8 @@ const movies = [
     year: 2024,
     genre: "Action",
     rating: 7.8,
+    mood: ["Excited"],
+    duration: 100, // minutes
     director: "Priya Nair",
     cast: ["Chris Dalton", "Nina Petrova", "Tomas Silva"],
     description: "A getaway driver agrees to one last job, a cross-country race with a mysterious cargo. Rival crews, bad weather and betrayal are all in the way.",
@@ -280,6 +330,8 @@ const movies = [
     year: 2023,
     genre: "Comedy",
     rating: 7.6,
+    mood: ["Happy", "Excited"],
+    duration: 91, // minutes
     director: "Anika Rao",
     cast: ["Peter Lowe", "Grace Tan", "Hugo Marsh"],
     description: "A village bakery loses its prize-winning recipe the night before a national contest. A gang of unlikely friends sets out to get it back.",
@@ -291,6 +343,8 @@ const movies = [
     year: 2024,
     genre: "Drama",
     rating: 8.4,
+    mood: ["Relaxed"],
+    duration: 123, // minutes
     director: "Nimal Perera",
     cast: ["Ravi Fernando", "Sithara Jayasuriya", "Kamal Silva"],
     description: "A teacher in the hill country spends one cold winter helping her village keep its only school open. Small acts of courage change many lives.",
@@ -302,6 +356,8 @@ const movies = [
     year: 2023,
     genre: "Horror",
     rating: 7.7,
+    mood: ["Thrilled"],
+    duration: 87, // minutes
     director: "Mara Lindqvist",
     cast: ["Jonas Berg", "Ingrid Holm", "Felix Rowe"],
     description: "On a remote research ship the crew wakes to total silence and a missing captain. Something on board is listening to them.",
@@ -313,6 +369,8 @@ const movies = [
     year: 2025,
     genre: "Romance",
     rating: 7.9,
+    mood: ["Happy", "Relaxed"],
+    duration: 106, // minutes
     director: "Ishara De Silva",
     cast: ["Dinuka Wickrama", "Maya Rajapaksa", "Ashan Perera"],
     description: "Two childhood friends meet again in the old fort town after ten years apart. Old feelings return along with the sea breeze.",
@@ -324,6 +382,8 @@ const movies = [
     year: 2011,
     genre: "Sci-Fi",
     rating: 6.9,
+    mood: ["Excited"],
+    duration: 95, // minutes
     director: "Tobias Kline",
     cast: ["Nathan Cross", "Leila Amin", "Piotr Wolski"],
     description: "A survey crew picks up a strange signal from deep space. Following it changes the way they see time itself.",
@@ -335,6 +395,8 @@ const movies = [
     year: 2024,
     genre: "Animation",
     rating: 7.5,
+    mood: ["Happy", "Relaxed"],
+    duration: 84, // minutes
     director: "Sofia Almeida",
     cast: ["Voice: Ben Cole", "Voice: Rita Gomes", "Voice: Dan Lee"],
     description: "A baby turtle and a clumsy octopus travel across the sea to find the turtle's lost family. Along the way they make friends with every creature they meet.",
@@ -346,6 +408,8 @@ const movies = [
     year: 2020,
     genre: "Thriller",
     rating: 8.0,
+    mood: ["Thrilled"],
+    duration: 101, // minutes
     director: "Felix Brandt",
     cast: ["Laura Weiss", "Hans Keller", "Tina Marlow"],
     description: "A woman wakes up with no memory of the last sixty minutes and a stranger's phone in her pocket. The clock to find the truth is already ticking.",

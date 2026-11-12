@@ -79,6 +79,18 @@ export default function HomeScreen({ navigation }) {
         ))}
       </View>
 
+      <Pressable
+        style={({ pressed }) => [styles.moodBanner, pressed && { opacity: 0.8 }]}
+        onPress={() => navigation.navigate('MoodMatcher')}
+      >
+        <Ionicons name="happy-outline" size={30} color={COLORS.primary} />
+        <View style={{ flex: 1 }}>
+          <Text style={styles.moodBannerTitle}>Movie Mood Matcher</Text>
+          <Text style={styles.moodBannerText}>Not sure what to watch? Let your mood decide.</Text>
+        </View>
+        <Ionicons name="chevron-forward" size={20} color={COLORS.textSecondary} />
+      </Pressable>
+
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionTitle}>Popular Movies</Text>
         <Pressable onPress={() => navigation.navigate('AllMovies')}>
@@ -140,4 +152,18 @@ const styles = StyleSheet.create({
   sectionTitle: { color: COLORS.text, fontSize: 20, fontWeight: '700' },
   seeAll: { color: COLORS.primary, fontSize: 14, fontWeight: '600' },
   rowContent: { paddingHorizontal: SPACING },
+  moodBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    backgroundColor: COLORS.card,
+    borderRadius: RADIUS,
+    borderLeftWidth: 4,
+    borderLeftColor: COLORS.primary,
+    marginHorizontal: SPACING,
+    marginTop: SPACING,
+    padding: 14,
+  },
+  moodBannerTitle: { color: COLORS.text, fontSize: 16, fontWeight: '700' },
+  moodBannerText: { color: COLORS.textSecondary, fontSize: 13, marginTop: 2 },
 });
