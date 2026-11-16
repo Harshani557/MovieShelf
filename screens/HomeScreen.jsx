@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import MovieCard from '../components/MovieCard';
 import movies from '../data/movies';
 import { useFavourites } from '../context/FavouritesContext';
+import { useAuth } from '../context/AuthContext';
 import { COLORS, RADIUS, SPACING } from '../constants/theme';
 
 const CARD_WIDTH = 140;
@@ -17,6 +18,7 @@ const QUICK_LINKS = [
 
 export default function HomeScreen({ navigation }) {
   const { favouriteIds } = useFavourites();
+  const { user } = useAuth();
 
   const popularMovies = useMemo(
     () => [...movies].sort((a, b) => b.rating - a.rating).slice(0, 8),
@@ -53,7 +55,7 @@ export default function HomeScreen({ navigation }) {
             Movie<Text style={{ color: COLORS.primary }}>Shelf</Text>
           </Text>
         </View>
-        <Text style={styles.welcome}>Welcome back, movie lover!</Text>
+        <Text style={styles.welcome}>Welcome back, {user ? user.name.split(' ')[0] : 'movie lover'}!</Text>
         <Text style={styles.subWelcome}>
           Browse {movies.length} movies, search by title and save your favourites in your own
           personal collection.
